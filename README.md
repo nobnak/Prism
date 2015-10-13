@@ -2,4 +2,4 @@
 
 [Prism Unity Package](Prism.unitypackage)
 
-![Prism Demo](Prism.png)
+[![Prism Demo](Prism_Small.png)](Prism.png)

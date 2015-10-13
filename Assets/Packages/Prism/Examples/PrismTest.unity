@@ -144,7 +144,7 @@ Camera:
     height: 1
   near clip plane: .300000012
   far clip plane: 1000
-  field of view: 60
+  field of view: 90.8981628
   orthographic: 0
   orthographic size: 5
   m_Depth: -2
@@ -184,6 +184,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraCount: 32
+  autoFit: 1
   overrideCameraParams:
     clearFlags: 1
     backgroundColor: {r: 1, g: 1, b: 1, a: 0}
@@ -217,9 +218,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b83378a6181230649bef0d0e750b4216, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  count: 100
-  radius: 20
-  angularSpeed: {x: 0, y: 30, z: 0}
+  count: 200
+  radius: 10
+  angularSpeed: {x: 0, y: 10, z: 0}
   particlefab: {fileID: 147710, guid: e4aa864f9d38b784bbfd64961ce1aa69, type: 2}
 --- !u!4 &1814241965
 Transform:

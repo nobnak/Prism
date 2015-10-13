@@ -8,6 +8,7 @@ namespace PrismSystem {
 		public const float FULL_ROTATION = 360f;
 
 		public int cameraCount = 4;
+		public bool autoFit = false;
 		public CameraParams overrideCameraParams;
 
 		RenderTexture _outputTex;
@@ -50,6 +51,11 @@ namespace PrismSystem {
 			var w = 1f / cameraCount;
 			var a = w / (2f * Mathf.Tan(0.5f * theta_w * Mathf.Deg2Rad));
 			var h = 2f * a * Mathf.Tan(0.5f * theta_h * Mathf.Deg2Rad) * aspect;
+			if (autoFit) {
+				theta_h = 2f * Mathf.Atan(1f / (2f * a * aspect)) * Mathf.Rad2Deg;
+				_targetCamera.fieldOfView = theta_h;
+				h = 1f;
+			}
 
 			var offsety = 0.5f * (1f - h);
 			for (var i = 0; i < cameraCount; i++) {

@@ -2,4 +2,4 @@
 
 [Prism Unity Package](Prism.unitypackage)
 
-[![Prism Demo](Prism_Small.png)](Prism.png)
+[![Prism Demo](Prism_Small.png)](https://vimeo.com/142542581)
